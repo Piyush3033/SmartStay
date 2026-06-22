@@ -10,16 +10,16 @@ const links = [
 
 function Navbar() {
   return (
-    <header className="navbar">
-      <NavLink to="/" className="navbar-brand">
+    <header className="navbar flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-slate-950 text-white shadow-lg">
+      <NavLink to="/" className="navbar-brand text-lg font-semibold tracking-[0.12em]">
         SmartStay
       </NavLink>
-      <nav className="navbar-links" aria-label="Primary navigation">
+      <nav className="navbar-links flex flex-wrap gap-4" aria-label="Primary navigation">
         {links.map((link) => (
           <NavLink
             key={link.to}
             to={link.to}
-            className={({ isActive }) => isActive ? 'nav-link active' : 'nav-link'}
+            className={({ isActive }) => isActive ? 'nav-link active text-sky-300' : 'nav-link text-slate-200 hover:text-white'}
           >
             {link.label}
           </NavLink>
