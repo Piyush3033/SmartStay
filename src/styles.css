@@ -11,6 +11,16 @@
   background: #f8fafc;
 }
 
+html.dark {
+  color-scheme: dark;
+  color: #f1f5f9;
+  background: #0f172a;
+}
+
+html.dark body {
+  background: linear-gradient(180deg, #0f172a 0%, #1e293b 100%);
+}
+
 * {
   box-sizing: border-box;
 }
@@ -23,6 +33,7 @@ html, body, #root {
 body {
   margin: 0;
   background: linear-gradient(180deg, #f8fafc 0%, #ffffff 100%);
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 button, input, textarea, select {
@@ -43,6 +54,10 @@ body {
   max-width: 60ch;
   margin: 1.5rem auto 0;
   color: #475569;
+}
+
+html.dark .section-intro {
+  color: #cbd5e1;
 }
 
 .hero-list,
@@ -70,6 +85,11 @@ body {
   border: 1px solid rgba(56, 189, 248, 0.18);
 }
 
+html.dark .metric-card {
+  background: #0c4a6e;
+  border-color: rgba(56, 189, 248, 0.3);
+}
+
 .metric-card h3 {
   margin: 0 0 0.5rem;
 }
@@ -91,6 +111,13 @@ body {
   border-radius: 0.85rem;
   border: 1px solid #cbd5e1;
   background: #f8fafc;
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+html.dark .login-field input {
+  border-color: #475569;
+  background: #1e293b;
+  color: #f1f5f9;
 }
 
 .login-button {
@@ -100,6 +127,16 @@ body {
   background: #0ea5e9;
   color: white;
   font-weight: 700;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.login-button:hover {
+  background: #0284c7;
+}
+
+.login-button:disabled {
+  opacity: 0.6;
   cursor: not-allowed;
 }
 
