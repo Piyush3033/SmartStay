@@ -12,6 +12,7 @@ function Billing() {
           <li>Generate itemized invoices for each stay</li>
           <li>Track payments and unsettled balances</li>
           <li>Apply discounts, fees, and GST automatically</li>
+          <li>Support secure payment tracking and receipts</li>
         </ul>
       </div>
     </section>

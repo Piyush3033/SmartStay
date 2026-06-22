@@ -19,6 +19,14 @@ function About() {
           <li>Secure access for administrators and receptionists</li>
         </ul>
       </div>
+      <div>
+        <h3>Built for hotel teams</h3>
+        <ul>
+          <li>Easy check-in and check-out workflows</li>
+          <li>Dashboard insights for daily performance</li>
+          <li>Mobile-friendly access across devices</li>
+        </ul>
+      </div>
     </section>
   )
 }

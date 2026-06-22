@@ -11,8 +11,10 @@ const links = [
 function Navbar() {
   return (
     <header className="navbar">
-      <div className="navbar-brand">SmartStay</div>
-      <nav className="navbar-links">
+      <NavLink to="/" className="navbar-brand">
+        SmartStay
+      </NavLink>
+      <nav className="navbar-links" aria-label="Primary navigation">
         {links.map((link) => (
           <NavLink
             key={link.to}

@@ -7,6 +7,11 @@ function Hero() {
         <p>
           Manage bookings, guests, billing, and reports from one responsive hotel management portal.
         </p>
+        <ul className="hero-list">
+          <li>Book rooms in real time</li>
+          <li>Track guest stays and invoices</li>
+          <li>See occupancy insights instantly</li>
+        </ul>
       </div>
       <div className="hero-cta">
         <span>Fast setup, role-based security, and AI guest recommendations.</span>

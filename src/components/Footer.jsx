@@ -1,7 +1,7 @@
 function Footer() {
   return (
     <footer className="site-footer">
-      <p>© 2026 SmartStay. Built for cloud-based hotel operations.</p>
+      <p>© {new Date().getFullYear()} SmartStay. Built for cloud-based hotel operations.</p>
     </footer>
   )
 }

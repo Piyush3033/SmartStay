@@ -30,6 +30,75 @@ a {
   color: inherit;
 }
 
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.section-intro {
+  max-width: 60ch;
+  margin: 1.5rem auto 0;
+  color: #475569;
+}
+
+.hero-list,
+.page-section ul {
+  margin: 1rem 0 0;
+  padding-left: 1.25rem;
+}
+
+.hero-list li,
+.page-section li {
+  margin-bottom: 0.5rem;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+  margin: 1.5rem 0;
+}
+
+.metric-card {
+  padding: 1.5rem;
+  background: #eff6ff;
+  border-radius: 18px;
+  border: 1px solid rgba(56, 189, 248, 0.18);
+}
+
+.metric-card h3 {
+  margin: 0 0 0.5rem;
+}
+
+.login-form {
+  margin-top: 1.5rem;
+  display: grid;
+  gap: 1rem;
+}
+
+.login-field {
+  display: grid;
+  gap: 0.5rem;
+}
+
+.login-field input {
+  width: 100%;
+  padding: 0.85rem 1rem;
+  border-radius: 0.85rem;
+  border: 1px solid #cbd5e1;
+  background: #f8fafc;
+}
+
+.login-button {
+  padding: 0.95rem 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background: #0ea5e9;
+  color: white;
+  font-weight: 700;
+  cursor: not-allowed;
+}
+
 .app-shell {
   display: flex;
   flex-direction: column;
