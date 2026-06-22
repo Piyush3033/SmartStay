@@ -1,5 +1,6 @@
 import { NavLink } from 'react-router-dom'
 import { useTheme } from '../context/ThemeContext.jsx'
+import ThemeToggle from './ThemeToggle.jsx'
 
 const links = [
   { label: 'Home', to: '/' },
@@ -11,8 +12,6 @@ const links = [
 ]
 
 function Navbar() {
-  const { isDark, toggleTheme } = useTheme()
-
   return (
     <header className="navbar flex flex-wrap items-center justify-between gap-4 px-6 py-4 bg-slate-950 text-white shadow-lg dark:bg-slate-900 transition-colors">
       <NavLink to="/" className="navbar-brand text-lg font-semibold tracking-[0.12em]">
@@ -28,17 +27,13 @@ function Navbar() {
             {link.label}
           </NavLink>
         ))}
-        <button
-          onClick={toggleTheme}
-          className="ml-2 px-4 py-2 rounded-lg bg-slate-700 hover:bg-slate-600 active:bg-slate-500 transition-all font-semibold text-base shadow-md hover:shadow-lg"
-          aria-label={isDark ? 'Switch to light mode' : 'Switch to dark mode'}
-          title={isDark ? 'Light Mode' : 'Dark Mode'}
-        >
-          {isDark ? '☀️ Light' : '🌙 Dark'}
-        </button>
+        <div className="flex items-center">
+          <ThemeToggle />
+        </div>
       </nav>
     </header>
   )
 }
 
 export default Navbar
+
