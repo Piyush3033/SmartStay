@@ -4,6 +4,7 @@ import Footer from './components/Footer.jsx'
 import Home from './pages/Home.jsx'
 import About from './pages/About.jsx'
 import Dashboard from './pages/Dashboard.jsx'
+import Billing from './pages/Billing.jsx'
 import Login from './pages/Login.jsx'
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/billing" element={<Billing />} />
           <Route path="/login" element={<Login />} />
         </Routes>
       </main>
