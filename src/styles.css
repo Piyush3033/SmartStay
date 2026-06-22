@@ -316,13 +316,13 @@ html.dark .login-field input {
 .theme__fill {
   background-color: var(--bg);
   display: block;
-  mix-blend-mode: normal;
+  mix-blend-mode: lighten;
   position: fixed;
   inset: 0;
   height: 100%;
   transform: translateX(-100%);
   pointer-events: none;
-  opacity: 0.98;
+  z-index: -1;
 }
 
 .theme__icon,
@@ -526,13 +526,19 @@ html.dark * {
   color: inherit;
 }
 
-html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6,
-html.dark p, html.dark span, html.dark div, html.dark section {
+html.dark h1, 
+html.dark h2, 
+html.dark h3, 
+html.dark h4, 
+html.dark h5, 
+html.dark h6,
+html.dark p, 
+html.dark li {
   color: #f1f5f9;
-  opacity: 1 !important;
 }
 
-html.dark strong, html.dark b {
+html.dark strong, 
+html.dark b {
   color: #f1f5f9;
 }
 
@@ -548,24 +554,20 @@ html.dark .page-section,
 html.dark .feature-card {
   background-color: #1e293b;
   border-color: #334155;
+  color: #f1f5f9;
 }
 
 html.dark .page-section h2,
 html.dark .feature-card h3,
 html.dark .page-section h3,
 html.dark .page-section p,
-html.dark .feature-card p,
-html.dark .navbar,
-html.dark .navbar-brand,
-html.dark .nav-link {
+html.dark .feature-card p {
   color: #f1f5f9;
-  opacity: 1;
 }
 
 html.dark .page-section ul li,
 html.dark .page-section li {
   color: #e2e8f0;
-  opacity: 1;
 }
 
 html.dark a {
@@ -584,9 +586,8 @@ html.dark select {
   border-color: #475569;
 }
 
-html.dark button {
+html.dark button:not(.theme__toggle) {
   color: #f1f5f9;
-  opacity: 1;
 }
 
 html.dark .site-footer {
