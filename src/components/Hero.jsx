@@ -3,7 +3,7 @@ function Hero() {
     <section className="hero-section">
       <div>
         <p className="eyebrow">Hotel management made simple</p>
-        <h1>SmartStay Cloud Hotel Dashboard</h1>
+        <h1>SmartStay</h1>
         <p>
           Manage bookings, guests, billing, and reports from one responsive hotel management portal.
         </p>
