@@ -316,12 +316,13 @@ html.dark .login-field input {
 .theme__fill {
   background-color: var(--bg);
   display: block;
-  mix-blend-mode: lighten;
+  mix-blend-mode: normal;
   position: fixed;
   inset: 0;
   height: 100%;
   transform: translateX(-100%);
   pointer-events: none;
+  opacity: 0.98;
 }
 
 .theme__icon,
@@ -525,6 +526,24 @@ html.dark * {
   color: inherit;
 }
 
+html.dark h1, html.dark h2, html.dark h3, html.dark h4, html.dark h5, html.dark h6,
+html.dark p, html.dark span, html.dark div, html.dark section {
+  color: #f1f5f9;
+  opacity: 1 !important;
+}
+
+html.dark strong, html.dark b {
+  color: #f1f5f9;
+}
+
+html.dark .section-intro {
+  color: #cbd5e1;
+}
+
+html.dark label {
+  color: #e2e8f0;
+}
+
 html.dark .page-section,
 html.dark .feature-card {
   background-color: #1e293b;
@@ -578,4 +597,29 @@ html.dark .site-footer {
 
 html.dark .hero-section {
   background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+}
+
+html.dark .hero-section h1,
+html.dark .hero-section p {
+  color: #f1f5f9;
+  opacity: 1;
+}
+
+html.dark .eyebrow {
+  color: #38bdf8;
+}
+
+html.dark .hero-section .hero-list li {
+  color: #e2e8f0;
+}
+
+html.dark .hero-cta {
+  background: #1e293b;
+  color: #f1f5f9;
+  border: 1px solid #334155;
+}
+
+html.dark .hero-cta:hover {
+  background: #334155;
+  color: #f8fafc;
 }
